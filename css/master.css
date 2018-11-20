@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body{
+  background-image: url("wheat.png");
+  background-repeat: repeat;
+}
+
+.navtitle{
+  color: orange;
+  font-size: 40px;
+}
+
+.navlink{
+  color: red;
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: 'Roboto Slab, serif';
+}
+
+.navimage{
+  color: brown;
+  size: 5x;
+}
