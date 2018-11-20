@@ -1,0 +1,5 @@
+astronaut icon https://fontawesome.com/icons/user-astronaut?style=regular
+facebook icon https://fontawesome.com/icons/facebook-square?style=brands
+twitter icon https://fontawesome.com/icons/twitter-square?style=brands
+linkedin icon https://fontawesome.com/icons/linkedin?style=brands
+instagram icon https://fontawesome.com/icons/instagram?style=brands
