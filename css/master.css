@@ -2,8 +2,19 @@
 
 body{
   /*Background image obtained from https://www.toptal.com/designers/subtlepatterns/wheat-pattern/*/
+  font-family: Raleway, sans-serif;
   background-color: #cccccc;
   background-image: url("../images/wheat.png");
+  background-attachment: fixed;
+  height: 100%
+}
+
+.header{
+  height:80px;
+}
+
+.navbar{
+  background-color: #22555E;
 }
 
 .navbar-brand{
@@ -14,14 +25,30 @@ body{
 
 .navbar-nav{
   font-family: Raleway, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   color: yellow;
-}
-
-.fa-user-astronaut{
 }
 
 p{
   font-family: Raleway, sans-serif;
   color: lightgrey;
+}
+
+.standardimage{
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.footext{
+  font-family: Raleway, sans-serif;
+  font-size: 10pt;
+  color: lightgrey;
+  padding: auto;
+}
+
+.introtitle{
+  font-family: BioRhyme, serif;
+  font-size: 36pt;
 }
