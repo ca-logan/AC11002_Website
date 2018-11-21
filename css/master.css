@@ -6,15 +6,13 @@ body{
   background-color: #cccccc;
   background-image: url("../images/wheat.png");
   background-attachment: fixed;
-  height: 100%
-}
-
-.header{
-  height:80px;
+  padding-top: 80px;
+  padding-bottom: 160px;
 }
 
 .navbar{
   background-color: #22555E;
+  height:80px;
 }
 
 .navbar-brand{
@@ -37,8 +35,8 @@ p{
 .standardimage{
   height: auto;
   width: auto;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 385px;
+  max-height: 385px;
 }
 
 .footext{
@@ -49,6 +47,34 @@ p{
 }
 
 .introtitle{
+  padding-top: 30px;
   font-family: BioRhyme, serif;
   font-size: 36pt;
+  color: #339E8E;
+}
+
+.footer{
+  margin-top: 80px;
+}
+
+.homecard{
+  width: 18rem;
+  text-align: center;
+}
+
+.card-text{
+  font-family: Raleway, sans-serif;
+  color: black;
+}
+
+.maintext{
+  text-align: right;
+}
+
+.buttontext{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: BioRhyme, serif;
+  font-size: 24pt;
+  color: #339E8E;
 }
