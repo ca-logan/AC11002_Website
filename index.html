@@ -13,6 +13,7 @@
   <title>Calum Logan - Home</title>
 </head>
 
+<!--Set up a standard bootstrap navbar for the top, and fix it to the top of the screen whn scrolling-->
 <body>
   <nav class="header navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -39,29 +40,35 @@
     </div>
   </nav>
 
+  <!--Setting up a small grid to include info about myself and a couple of images-->
   <div class="container">
-    <div class="row">
-      <p class="introtitle">Who is she?</p>
+    <div class="home-info-bg">
+      <div class="row">
+        <p class="introtitle">About me</p>
       </div>
       <div class="row">
-        <div class="col-7">
+        <div class="col-8">
           <p class="maintext mt-5">Hey! I'm Calum, a 20 year old computing student at the University of Dundee. This website was made for one of my first assignments at uni, and hopefully more
-          gets added to it in the future!
-          <p class="maintext">I grew up near Brighton and lived in the same place for 19 years before moving to Scotland for uni, and I went on my first journey abroad to New Zealand at the tender young age of 18 -
-          despite all of this, I'm passionate about travel and I'd love to volunteer all over the world in the near future.</p>
-          <p class="maintext">I've been interested in video games ever since my big brother introduced me to games he was passionate about, which are some of my earliest memories. I've had an interest in going into astrophysics and have worked in an observatory that was converted into a science center (big up Herstmonceux) but I always knew the job I wanted, since I come into contact with it every day, was in the games industry.</p>
-          <p class="maintext">In my previous education I've always achieved my best grades in maths and the sciences, but recently I've wanted to shift that to a more creative focus, which
-          should be interesting in computing.</p>
-          <p class="maintext">I'm also a keen cook and baker, so if you're in dire need of cake or bread, I'm your guy!</p>
+            gets added to it in the future!
+            <p class="maintext">I grew up near Brighton and lived in the same place for 19 years before moving to Scotland for uni, and I went on my first journey abroad to New Zealand at the tender young age of 18 -
+              despite all of this, I'm passionate about travel and I'd love to volunteer all over the world in the near future.</p>
+            <p class="maintext">I've been interested in video games ever since my brother introduced me to games he was passionate about, which are some of my earliest memories. I've had an interest in going into astrophysics and have worked in an
+              observatory that was converted into a science center (big up Herstmonceux) but I always knew the job I wanted, since I come into contact with it every day, was in the games industry.</p>
+            <p class="maintext">In my previous education I've always achieved my best grades in maths and the sciences, but recently I've wanted to shift that to a more creative focus, which
+              should be interesting in computing.</p>
+            <p class="maintext">I'm also a keen cook and baker, so if you're in dire need of cake or bread, I'm your guy!</p>
 
-            </div>
-            <div class="col-3">
-        <img class="home-image mb-5" src="images/fearless.jpg" alt="Picture of me in Manhattan">
         </div>
+        <div class="col-4">
+          <img class="home-image" src="images/fearless.jpg" alt="Picture of me in Manhattan">
+          <img class="home-image" src="images/latitude.jpg" alt="Picture of me at Latitude festival">
         </div>
+      </div>
+    </div>
 
+    <!--Then set up a new row with some cards, linking to other pages-->
     <div class="row">
-      <div class="col-sm">
+      <div class="col-md">
         <div class="homecard card card-img-top mt-5">
           <img class="button-image" src="images/projectstock.jpg" alt="Picture for projects page">
           <!-- Adding buttons to cards - I've used the default bootstrap info button as changing the background hover colour would require
@@ -69,13 +76,13 @@
           <a href="projects.html" class="btn btn-outline-info button-text">My Projects</a>
         </div>
       </div>
-      <div class="col-sm">
+      <div class="col-md">
         <div class="homecard card mt-5">
           <img class="button-image" src="images/cvstock.jpg" alt="Picture for CV page">
           <a href="mycv.html" class="btn btn-outline-info button-text">My CV</a>
         </div>
       </div>
-      <div class="col-sm">
+      <div class="col-md">
         <div class="homecard card mt-5">
           <img class="button-image" src="images/contactstock.jpg" alt="Picture for contact page">
           <a href="contact.html" class="btn btn-outline-info button-text">Contact me</a>
@@ -85,10 +92,14 @@
     </div>
   </div>
 
+  <!--Set up a footer as a navbar so the user can click on icon links to social media-->
+  <!--This footer uses absolute positioning in the CSS compared to the rest of the code, so it will always be on the bottom of the page but not fixed to the screen-->
   <nav class="footer navbar navbar-expand-lg navbar-dark">
-    <h1 class="footext">Copyright © 2018 Calum Logan - No rights reserved, take anything you'd like.</h1>
+    <div class="footext">Copyright © 2018 Calum Logan - No rights reserved, take anything you'd like.</div>
     <ul class="navbarlinks navbar-nav ml-auto">
+      <!--Notice there's no hamburger option, so the links will just disappear when the device isn't L/XL-->
       <li class="nav-item">
+        <!--Using fontawesome links to facebook, twitter, instagram and linkedin. I'm not brave enough to link my own so they just go to the normal site-->
         <a class="nav-link" href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>
       </li>
       <li class="nav-item">
