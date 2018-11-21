@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme:700|Raleway:400,700');
 
 body{
-  background-image: url("wheat.png");
-  background-repeat: repeat;
+  /*Background image obtained from https://www.toptal.com/designers/subtlepatterns/wheat-pattern/*/
+  background-color: #cccccc;
+  background-image: url("../images/wheat.png");
 }
 
-.navtitle{
-  color: orange;
-  font-size: 40px;
-}
-
-.navlink{
-  color: red;
-  font-size: 20px;
-  margin-top: 15px;
-  font-family: 'Roboto Slab, serif';
-}
-
-.navimage{
+.navbar-brand{
+  font-family: BioRhyme, serif;
+  font-size: 25px;
   color: brown;
-  size: 5x;
+}
+
+.navbar-nav{
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  color: yellow;
+}
+
+.fa-user-astronaut{
+}
+
+p{
+  font-family: Raleway, sans-serif;
+  color: lightgrey;
 }
