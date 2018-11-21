@@ -18,7 +18,6 @@ body{
 .navbar-brand{
   font-family: BioRhyme, serif;
   font-size: 25px;
-  color: brown;
 }
 
 .navbar-nav{
@@ -32,11 +31,17 @@ p{
   color: lightgrey;
 }
 
-.standardimage{
-  height: auto;
+.button-image{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.home-image{
   width: auto;
-  max-width: 385px;
-  max-height: 385px;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 75px;
 }
 
 .footext{
@@ -47,7 +52,7 @@ p{
 }
 
 .introtitle{
-  padding-top: 30px;
+  padding-top: 60px;
   font-family: BioRhyme, serif;
   font-size: 36pt;
   color: #339E8E;
@@ -55,6 +60,8 @@ p{
 
 .footer{
   margin-top: 80px;
+  width: 100%;
+  position: absolute;
 }
 
 .homecard{
@@ -62,16 +69,11 @@ p{
   text-align: center;
 }
 
-.card-text{
-  font-family: Raleway, sans-serif;
-  color: black;
-}
-
 .maintext{
   text-align: right;
 }
 
-.buttontext{
+.button-text{
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: BioRhyme, serif;
