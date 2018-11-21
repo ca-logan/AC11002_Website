@@ -1,82 +1,189 @@
 @import url('https://fonts.googleapis.com/css?family=BioRhyme:700|Raleway:400,700');
 
-body{
-  /*Background image obtained from https://www.toptal.com/designers/subtlepatterns/wheat-pattern/*/
+body {
+  /*Background image obtained from https://www.toptal.com/designers/subtlepatterns/wheat-pattern/
+  set up standard body stuff like fonts, the background image etc.*/
   font-family: Raleway, sans-serif;
   background-color: #cccccc;
   background-image: url("../images/wheat.png");
+  /*I searched for a good seamless pattern FOREVER and the best I could find
+  was some wheat*/
   background-attachment: fixed;
+  /*Decided to go along with it since I bake(?)*/
   padding-top: 80px;
   padding-bottom: 160px;
+  position: relative;
 }
 
-.navbar{
+.navbar {
+  /*Navbar is set to a custom teal-ish colour*/
   background-color: #22555E;
-  height:80px;
+  height: 80px;
 }
 
-.navbar-brand{
+/*Set up navbar fonts*/
+.navbar-brand {
   font-family: BioRhyme, serif;
   font-size: 25px;
 }
 
-.navbar-nav{
+.navbar-nav {
   font-family: Raleway, sans-serif;
   font-size: 16px;
-  color: yellow;
 }
 
-p{
+/*All headers are going to use this text style*/
+h1 {
+  font-family: BioRhyme, sans-serif;
+  color: #339E8E
+}
+
+/*And almost all body text/paragraphs are going to use this style*/
+p {
   font-family: Raleway, sans-serif;
   color: lightgrey;
 }
 
-.button-image{
-  max-width: 400px;
-  max-height: 400px;
+/*Sets dimensions for images being used on the homepage buttons*/
+.button-image {
+  max-width: 385px;
+  max-height: 385px;
 }
 
-.home-image{
+/*Sets behaviours for the 2 images on the homepage*/
+.home-image {
   width: auto;
   height: auto;
-  max-width: 400px;
-  max-height: 400px;
-  margin-top: 72px;
+  max-width: 250px;
+  margin-bottom: 20px;
 }
 
-.footext{
+/*Describes text used in the footer*/
+.footext {
   font-family: Raleway, sans-serif;
   font-size: 10pt;
   color: lightgrey;
-  padding: auto;
 }
 
-.introtitle{
+/*Similar to headers, describes style for introductory headers. May have been
+a little pointless*/
+.introtitle {
   padding-top: 60px;
+  margin-left: 150px;
   font-family: BioRhyme, serif;
   font-size: 36pt;
   color: #339E8E;
 }
 
-.footer{
-  margin-top: 80px;
-  width: 100%;
+/*Sets footer shape and behaviour - position needs to be absolute to appear
+at the bottom without being fixed*/
+.footer {
+  margin-top: auto;
   position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
 
-.homecard{
+/*Style for cards in the homepage*/
+.homecard {
+  margin-left: 2rem;
   width: 18rem;
   text-align: center;
 }
 
-.maintext{
+/*All main text in the homepage is aligned next to the images*/
+.maintext {
   text-align: right;
 }
 
-.button-text{
+/*Sets button text to the larger font by default*/
+.button-text {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: BioRhyme, serif;
   font-size: 24pt;
   color: #339E8E;
+}
+
+/*Sets font for button text*/
+.contact-button-text {
+  font-family: Raleway, sans-serif;
+  font-size: 18pt;
+}
+
+.projectcard>h1 {
+  text-align: center;
+}
+
+/*Adds transparent background for certain text*/
+/*Note - The CSS checker gives me an error saying that '#11443388' is not a
+valid colour, but it was the easiest way of making a transparent background so
+I've left it in for the 3 backgrounds*/
+.home-info-bg {
+  background-color: #11443388;
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  border-radius: 80px;
+}
+
+/*Same as above*/
+.contact-info-bg {
+  background-color: #11443388;
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border-radius: 80px;
+}
+
+/*Set height for each contact card*/
+.contactcard {
+  height: 225px;
+}
+
+/*Sets different spacing for icons in the contact page*/
+.contacticonr1 {
+  margin-left: 205px;
+}
+
+.contacticonr2 {
+  margin-left: 140px;
+}
+
+.card-header {
+  font-size: 16pt;
+}
+
+.card-title {
+  font-family: Raleway, sans-serif;
+  font-size: 20pt;
+}
+
+/*sets up background for the cv section*/
+.cv-info-bg {
+  background-color: #11443388;
+  border-radius: 80px;
+  margin-top: 40px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  max-width: 80%;
+}
+
+/*Defines spacing for each CV section*/
+.cv-row {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+/*Changes font colour for carousel text*/
+.carousel-caption>p {
+  color: #114433;
 }
